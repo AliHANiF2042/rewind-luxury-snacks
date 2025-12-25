@@ -1,0 +1,100 @@
+﻿@model RewindWebsite.Models.ViewModels.ProductsViewModel
+@{
+    ViewData["Title"] = "Our Products - Luxury Snacks Collection";
+}
+
+<section class="products-hero py-5">
+    <div class="container">
+        <h1 class="display-4 fw-bold text-center mb-4">Our <span class="text-purple">Product</span> Collection</h1>
+        <p class="lead text-center mb-5">Discover our range of luxury snacks, each crafted with the attention to detail demanded by 5-star restaurants.</p>
+
+        <div class="category-filter mb-5">
+            <div class="d-flex flex-wrap justify-content-center">
+                <a asp-controller="Products" asp-action="Index"
+                   class="category-btn @(string.IsNullOrEmpty(Model.SelectedCategory) ? "active" : "")">
+                    All Products
+                </a>
+                @foreach (var category in Model.Categories)
+                {
+                    <a asp-controller="Products" asp-action="Index" asp-route-category="@category"
+                       class="category-btn @(Model.SelectedCategory == category ? "active" : "")">
+                        @category
+                    </a>
+                }
+            </div>
+        </div>
+
+        @if (Model.Products.Any())
+        {
+            <div class="row">
+                @foreach (var product in Model.Products)
+                {
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="@product.imageUrl" alt="@product.name" class="img-fluid">
+                                @if (product.isFeatured)
+                                {
+                                    <span class="product-badge">Featured</span>
+                                }
+                            </div>
+                            <div class="product-body">
+                                <span class="product-category">@product.category</span>
+                                <h5 class="product-title">@product.name</h5>
+                                <p class="product-description">@product.description</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="product-price">$@product.price.ToString("F2")</div>
+                                    <a asp-controller="Products" asp-action="Details" asp-route-id="@product.id"
+                                       class="btn btn-product">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+        else
+        {
+            <div class="text-center py-5">
+                <h3>No products found in this category</h3>
+                <p>Check back soon or browse our other categories.</p>
+                <a asp-controller="Products" asp-action="Index" class="btn btn-primary">View All Products</a>
+            </div>
+        }
+
+        <div class="seo-content mt-5 pt-5 border-top">
+            <h2 class="h3 mb-3">Premium Snacks for Discerning Tastes</h2>
+            <p>Rewind snacks represent the perfect marriage of luxury and accessibility. Each product in our collection undergoes rigorous quality testing to ensure it meets the exacting standards of the nation's finest 5-star restaurants. From our signature truffle almonds to our artisanal crackers, every snack is crafted with meticulous attention to detail.</p>
+
+            <h3 class="h4 mt-4 mb-3">Why Choose Rewind Snacks?</h3>
+            <ul>
+                <li><strong>Restaurant-Quality:</strong> The same snacks served in Michelin-starred establishments</li>
+                <li><strong>Budget-Friendly:</strong> Luxury experiences without the luxury price tag</li>
+                <li><strong>Premium Ingredients:</strong> Sourced from trusted suppliers worldwide</li>
+                <li><strong>Handcrafted:</strong> Each batch is carefully prepared and inspected</li>
+                <li><strong>Nationwide Distribution:</strong> Available across the United States</li>
+            </ul>
+
+            <div class="alert alert-info mt-4">
+                <i class="bi bi-info-circle me-2"></i>
+                <strong>Wholesale Inquiries:</strong> Restaurants and retailers interested in carrying Rewind snacks can call us at <a href="tel:+18005551234">+1 (800) 555-1234</a> for bulk pricing and distribution information.
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta-section py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <h2 class="cta-title">Interested in Wholesale Pricing?</h2>
+                <p class="cta-text">Join over 50 five-star restaurants already serving Rewind snacks. Contact us for custom orders and volume discounts.</p>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+                <a href="tel:+18005551234" class="btn btn-cta btn-lg">
+                    <i class="bi bi-telephone"></i> Call for Pricing
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

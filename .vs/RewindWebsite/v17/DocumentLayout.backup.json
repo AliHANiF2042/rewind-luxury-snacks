@@ -1,0 +1,92 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\RewindWebsite\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2640FCE8-0468-4AB9-9BBC-A54036A4365C}|RewindWebsite\\RewindWebsite.csproj|d:\\rewindwebsite\\rewindwebsite\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2640FCE8-0468-4AB9-9BBC-A54036A4365C}|RewindWebsite\\RewindWebsite.csproj|solutionrelative:rewindwebsite\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2640FCE8-0468-4AB9-9BBC-A54036A4365C}|RewindWebsite\\RewindWebsite.csproj|d:\\rewindwebsite\\rewindwebsite\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2640FCE8-0468-4AB9-9BBC-A54036A4365C}|RewindWebsite\\RewindWebsite.csproj|solutionrelative:rewindwebsite\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2640FCE8-0468-4AB9-9BBC-A54036A4365C}|RewindWebsite\\RewindWebsite.csproj|d:\\rewindwebsite\\rewindwebsite\\views\\pages\\terms.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2640FCE8-0468-4AB9-9BBC-A54036A4365C}|RewindWebsite\\RewindWebsite.csproj|solutionrelative:rewindwebsite\\views\\pages\\terms.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2640FCE8-0468-4AB9-9BBC-A54036A4365C}|RewindWebsite\\RewindWebsite.csproj|d:\\rewindwebsite\\rewindwebsite\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2640FCE8-0468-4AB9-9BBC-A54036A4365C}|RewindWebsite\\RewindWebsite.csproj|solutionrelative:rewindwebsite\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 204,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Terms.cshtml",
+              "DocumentMoniker": "D:\\RewindWebsite\\RewindWebsite\\Views\\Pages\\Terms.cshtml",
+              "RelativeDocumentMoniker": "RewindWebsite\\Views\\Pages\\Terms.cshtml",
+              "ToolTip": "D:\\RewindWebsite\\RewindWebsite\\Views\\Pages\\Terms.cshtml",
+              "RelativeToolTip": "RewindWebsite\\Views\\Pages\\Terms.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAF4AAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-25T10:13:08.758Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "D:\\RewindWebsite\\RewindWebsite\\Views\\Home\\About.cshtml",
+              "RelativeDocumentMoniker": "RewindWebsite\\Views\\Home\\About.cshtml",
+              "ToolTip": "D:\\RewindWebsite\\RewindWebsite\\Views\\Home\\About.cshtml",
+              "RelativeToolTip": "RewindWebsite\\Views\\Home\\About.cshtml",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAAABsAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-25T10:12:42.789Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\RewindWebsite\\RewindWebsite\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "RewindWebsite\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\RewindWebsite\\RewindWebsite\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "RewindWebsite\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAAAGoAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-25T10:07:03.169Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\RewindWebsite\\RewindWebsite\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "RewindWebsite\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\RewindWebsite\\RewindWebsite\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "RewindWebsite\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-25T10:03:14.277Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

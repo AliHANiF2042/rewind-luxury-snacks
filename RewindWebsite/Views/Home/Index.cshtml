@@ -1,0 +1,147 @@
+﻿@model RewindWebsite.Models.ViewModels.HomeViewModel
+@{
+    ViewData["Title"] = "Rewind - Luxury Snacks at Affordable Prices";
+}
+
+<section class="hero-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h1 class="hero-title">Elegant Snacks, <span class="text-purple">Realistic Prices</span></h1>
+                <p class="hero-subtitle">Served in 5-star restaurants nationwide. Experience luxury without the luxury price tag.</p>
+                <div class="hero-buttons">
+                    <a href="#products" class="btn btn-primary btn-lg me-3">View Products</a>
+                    <a href="tel:+18005551234" class="btn btn-outline-primary btn-lg">
+                        <i class="bi bi-telephone"></i> Call Now
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img src="/images/christmas-jarcuterie-1200x814.jpg" alt="Rewind Luxury Snacks" class="img-fluid hero-image">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="products" class="py-5">
+    <div class="container">
+        <div class="section-header text-center mb-5">
+            <h2 class="section-title">Our <span class="text-purple">Featured</span> Products</h2>
+            <p class="section-subtitle">Premium snacks that grace the tables of 5-star restaurants</p>
+        </div>
+        <div class="row">
+            @foreach (var product in Model.FeaturedProducts)
+            {
+                <div class="col-md-3 mb-4">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="@product.imageUrl" alt="@product.name" class="img-fluid">
+                            @if (product.isFeatured)
+                            {
+                                <span class="product-badge">Featured</span>
+                            }
+                        </div>
+                        <div class="product-body">
+                            <h5 class="product-title">@product.name</h5>
+                            <p class="product-description">@product.description</p>
+                            <div class="product-price">$@product.price.ToString("F2")</div>
+                            <a asp-controller="Products" asp-action="Details" asp-route-id="@product.id" class="btn btn-product">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+        <div class="text-center mt-4">
+            <a asp-controller="Products" asp-action="Index" class="btn btn-primary btn-lg">View All Products</a>
+        </div>
+    </div>
+</section>
+
+<section class="team-section py-5 bg-light">
+    <div class="container">
+        <div class="section-header text-center mb-5">
+            <h2 class="section-title">Meet Our <span class="text-purple">Expert</span> Team</h2>
+            <p class="section-subtitle">The passionate creators behind every delicious snack</p>
+        </div>
+        <div class="row">
+            @foreach (var member in Model.TeamMembers)
+            {
+                <div class="col-md-4 mb-4">
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="@member.imageUrl" alt="@member.name" class="img-fluid">
+                        </div>
+                        <div class="team-body">
+                            <h5 class="team-name">@member.name</h5>
+                            <p class="team-position">@member.position</p>
+                            <p class="team-bio">@member.bio</p>
+                            <div class="team-experience">
+                                <i class="bi bi-award"></i> @member.experienceYears years experience
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+<section class="cta-section py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <h2 class="cta-title">Ready to Elevate Your Experience?</h2>
+                <p class="cta-text">Join the 5-star restaurants already serving our premium snacks. Call now for wholesale pricing and custom orders.</p>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+                <a href="tel:+18005551234" class="btn btn-cta btn-lg">
+                    <i class="bi bi-telephone"></i> Call +1 (800) 555-1234
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="testimonials py-5">
+    <div class="container">
+        <div class="section-header text-center mb-5">
+            <h2 class="section-title">Served in <span class="text-purple">Prestigious</span> Venues</h2>
+            <p class="section-subtitle">Trusted by the finest establishments nationwide</p>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class testimonial-card">
+                    <div class="testimonial-text">
+                        "Rewind snacks have elevated our dining experience. The quality is exceptional."
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>Chef Marco</strong><br>
+                        <em>5-Star Restaurant, New York</em>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "Our guests consistently praise the snack selection. Rewind delivers elegance."
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>Manager Sophia</strong><br>
+                        <em>Luxury Hotel, California</em>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "The perfect balance of luxury and affordability. Highly recommended."
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>Director James</strong><br>
+                        <em>Resort Chain, Florida</em>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

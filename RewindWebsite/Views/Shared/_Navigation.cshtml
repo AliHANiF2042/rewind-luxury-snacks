@@ -1,0 +1,42 @@
+﻿@using RewindWebsite.Controllers
+@{
+    var currentController = ViewContext.RouteData.Values["Controller"]?.ToString();
+    var currentAction = ViewContext.RouteData.Values["Action"]?.ToString();
+}
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+            <img src="/images/rewind-logo-white.png" alt="Rewind Logo" height="40">
+            <span class="brand-name">REWIND</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link @(currentController == "Home" && currentAction == "Index" ? "active" : "")"
+                       asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link @(currentController == "Products" ? "active" : "")"
+                       asp-area="" asp-controller="Products" asp-action="Index">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link @(currentController == "Home" && currentAction == "About" ? "active" : "")"
+                       asp-area="" asp-controller="Home" asp-action="About">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link @(currentController == "Pages" && currentAction == "Terms" ? "active" : "")"
+                       asp-area="" asp-controller="Pages" asp-action="Terms">Terms</a>
+                </li>
+                <li class="nav-item ms-lg-3">
+                    <a class="btn btn-cta" href="tel:+18005551234">
+                        <i class="bi bi-telephone"></i> Call Now
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

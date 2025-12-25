@@ -1,0 +1,136 @@
+﻿@model List<RewindWebsite.Models.TeamMember>
+@{
+    ViewData["Title"] = "About Rewind - Our Story & Mission";
+}
+
+<section class="about-hero py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h1 class="display-4 fw-bold mb-4">Our <span class="text-purple">Story</span></h1>
+                <p class="lead mb-4">Founded on the principle that everyone deserves to experience luxury, Rewind brings 5-star quality snacks to budget-conscious consumers nationwide.</p>
+                <div class="about-stats row mt-5">
+                    <div class="col-4 text-center">
+                        <h3 class="text-purple fw-bold">50+</h3>
+                        <p>5-Star Restaurants</p>
+                    </div>
+                    <div class="col-4 text-center">
+                        <h3 class="text-purple fw-bold">100K+</h3>
+                        <p>Happy Customers</p>
+                    </div>
+                    <div class="col-4 text-center">
+                        <h3 class="text-purple fw-bold">15+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img src="/images/christmas-jarcuterie-1200x814.jpg" alt="Rewind Team" class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mission-section py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <div class="mission-card p-4 h-100">
+                    <div class="mission-icon mb-3">
+                        <i class="bi bi-star-fill text-purple display-6"></i>
+                    </div>
+                    <h3 class="h4 mb-3">5-Star Quality</h3>
+                    <p>Every snack meets the exacting standards of Michelin-starred kitchens. We never compromise on quality.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="mission-card p-4 h-100">
+                    <div class="mission-icon mb-3">
+                        <i class="bi bi-cash-coin text-purple display-6"></i>
+                    </div>
+                    <h3 class="h4 mb-3">Budget-Friendly</h3>
+                    <p>Luxury shouldn't break the bank. Our direct-to-consumer model eliminates middlemen costs.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="mission-card p-4 h-100">
+                    <div class="mission-icon mb-3">
+                        <i class="bi bi-heart-fill text-purple display-6"></i>
+                    </div>
+                    <h3 class="h4 mb-3">Crafted with Care</h3>
+                    <p>Each product is handmade with attention to detail, using only the finest ingredients available.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="team-section py-5">
+    <div class="container">
+        <div class="section-header text-center mb-5">
+            <h2 class="section-title">Meet Our <span class="text-purple">Expert</span> Team</h2>
+            <p class="section-subtitle">The passionate creators behind every delicious snack</p>
+        </div>
+        <div class="row">
+            @foreach (var member in Model)
+            {
+                <div class="col-md-4 mb-4">
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="@member.imageUrl" alt="@member.name" class="img-fluid">
+                        </div>
+                        <div class="team-body">
+                            <h5 class="team-name">@member.name</h5>
+                            <p class="team-position">@member.position</p>
+                            <p class="team-bio">@member.bio</p>
+                            <div class="team-experience">
+                                <i class="bi bi-award"></i> @member.experienceYears years experience
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+<section class="values-section py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">Our <span class="text-purple">Core</span> Values</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="value-item">
+                    <h4><i class="bi bi-check-circle-fill text-purple me-2"></i>Quality First</h4>
+                    <p>We source only premium ingredients and maintain rigorous quality control at every production stage.</p>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="value-item">
+                    <h4><i class="bi bi-check-circle-fill text-purple me-2"></i>Transparency</h4>
+                    <p>Clear labeling, honest marketing, and straightforward pricing. No hidden costs or surprises.</p>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="value-item">
+                    <h4><i class="bi bi-check-circle-fill text-purple me-2"></i>Accessibility</h4>
+                    <p>Making luxury accessible to everyone, regardless of budget, without compromising on excellence.</p>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="value-item">
+                    <h4><i class="bi bi-check-circle-fill text-purple me-2"></i>Sustainability</h4>
+                    <p>Eco-friendly packaging and responsible sourcing practices to minimize our environmental impact.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="cta-banner py-4 bg-purple text-white">
+    <div class="container text-center">
+        <h3 class="mb-3">Ready to Experience Rewind Quality?</h3>
+        <a href="tel:" class="btn btn-light btn-lg">
+            <i class="bi bi-telephone"></i> Call 
+        </a>
+    </div>
+</div>
