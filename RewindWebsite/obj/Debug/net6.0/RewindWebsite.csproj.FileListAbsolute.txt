@@ -87,3 +87,4 @@ D:\RewindWebsite\RewindWebsite\obj\Debug\net6.0\RewindWebsite.pdb
 D:\RewindWebsite\RewindWebsite\obj\Debug\net6.0\RewindWebsite.genruntimeconfig.cache
 D:\RewindWebsite\RewindWebsite\obj\Debug\net6.0\ref\RewindWebsite.dll
 D:\RewindWebsite\RewindWebsite\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.InMemory.dll
+D:\RewindWebsite\RewindWebsite\obj\Debug\net6.0\RewindWebsite.sourcelink.json
