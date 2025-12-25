@@ -55,7 +55,6 @@ Production-ready code structure
 Performance optimization techniques
 
 🏗️ Architecture Breakdown
-text
 ┌─────────────────────────────────────────────────────┐
 │                    Presentation Layer                │
 │  • Razor Views with Layout Partialization           │
