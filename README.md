@@ -1,4 +1,11 @@
 # rewind-luxury-snacks
+# 🌟 Rewind Luxury Snacks - ASP.NET Core 6 Website
+
+## 🖼️ Website Preview
+
+![Rewind Luxury Snacks Website](screenshot/screencapture-localhost-7295-2025-12-25-14_03_49.png)
+
+*Elegant ASP.NET Core 6 MVC website with purple theme and responsive design*
 Experience Elegance, Embrace Affordability – A sophisticated snack distribution platform bridging 5-star restaurant quality with budget-conscious consumers.
 🌟 Rewind Luxury Snacks - ASP.NET Core 6 E-commerce Website
 Experience Elegance, Embrace Affordability – A sophisticated snack distribution platform bridging 5-star restaurant quality with budget-conscious consumers.
